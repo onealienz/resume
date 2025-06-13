@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ridzuan bin Ramli - Creative Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 700px;
+      width: 90%;
+      margin: 4rem 0;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: -80px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1, h2, p, li, .job-title, .job-date, .contact, .section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .in-view {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    h1 {
+      font-size: 1.7rem;
+      margin: 1rem 0 0.5rem;
+      color: #111;
+    }
+    .contact {
+      font-size: 0.9rem;
+      color: #666;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact i {
+      margin-right: 0.3rem;
+    }
+    h2 {
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6366f1;
+    }
+    p, li {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    ul {
+      padding-left: 1rem;
+      margin: 0.3rem 0 1rem;
+      text-align: left;
+      display: inline-block;
+    }
+    .section {
+      margin-bottom: 1.8rem;
+    }
+    .job-title {
+      font-weight: 600;
+      margin-top: 1rem;
+      color: #111827;
+    }
+    .job-date {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-buttons a {
+      background-color: #6366f1;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      transition: background-color 0.3s ease;
+    }
+    .contact-buttons a:hover {
+      background-color: #4f46e5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/mnt/data/IMG_9618.PNG" alt="Profile Picture" class="profile-pic" id="profile">
+    <h1>Muhammad Ridzuan bin Ramli</h1>
+    <div class="contact">
+      <span><i class="fas fa-map-marker-alt"></i> Kepala Batas, Penang</span>
+      <span><i class="fas fa-phone"></i> 011-5402 5453</span>
+      <span><i class="fas fa-envelope"></i> <a href="mailto:onealienz@yahoo.com">onealienz@yahoo.com</a></span>
+    </div>
+
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Results-driven Marketing Manager with 10+ years in digital marketing, branding, and creative design. Strong background in web development and AI-powered content creation. Passionate about helping brands grow with impactful, modern strategies.</p>
+    </div>
+
+    <div class="section">
+      <h2>Career Objective</h2>
+      <p>To contribute in a forward-thinking company by leading performance-based strategies, leveraging design and automation, and delivering high-impact marketing campaigns.</p>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <p class="job-title">Freelance Marketer & AI Trainer</p>
+      <p class="job-date">Jul 2024 – Present</p>
+      <ul>
+        <li>Delivered digital marketing solutions for small businesses</li>
+        <li>Facilitated AI workshops tailored for entrepreneurs</li>
+        <li>Enhanced branding and lead generation using automation tools</li>
+      </ul>
+
+      <p class="job-title">Marketing Manager – Teratak Jamu</p>
+      <p class="job-date">Mar 2014 – Jun 2024</p>
+      <ul>
+        <li>Led full-scale campaigns on Facebook & TikTok</li>
+        <li>Built agent sales funnels and operational SOPs</li>
+        <li>Directed brand strategy and customer experience mapping</li>
+      </ul>
+
+      <p class="job-title">Web & Graphic Designer – Resonet Sdn Bhd</p>
+      <p class="job-date">Mar 2012 – Feb 2024</p>
+      <ul>
+        <li>Redesigned UI/UX for mobile platforms and digital assets</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Facebook & TikTok Ads | Sales Funnel Design | Branding</li>
+        <li>Adobe Photoshop (Advanced) | Illustrator (Intermediate)</li>
+        <li>Web Development: HTML, CSS, jQuery, PHP</li>
+        <li>AI Tools | Copywriting | Visual Storytelling</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>PhotoshopWorld Asia – 2007</li>
+        <li>Photojournalism by Zainal Halim (REUTERS) – 2008</li>
+        <li>Marketing & Business Courses – 2013 to present</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>English (Professional)</li>
+        <li>Bahasa Malaysia (Native)</li>
+      </ul>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="https://wa.me/601154025453" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+601154025453"><i class="fas fa-phone"></i> Call</a>
+      <a href="mailto:onealienz@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </div>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('h1, h2, p, li, .job-title, .job-date, .contact, .profile-pic, .section').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
